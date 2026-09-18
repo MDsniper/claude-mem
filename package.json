@@ -55,7 +55,8 @@
     "bun": ">=1.0.0"
   },
   "scripts": {
-    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "np": {
     "yarn": false,
